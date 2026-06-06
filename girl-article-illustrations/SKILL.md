@@ -54,6 +54,7 @@ Do not use this skill for:
 - Read `references/style-dna.md` for non-negotiable visual constraints.
 - Read `references/girl-ip.md` for character behavior and design rules.
 - Read `references/composition-patterns.md` when choosing scene structure.
+- Read `references/examples.md` when the user wants a directly reusable prompt pattern for a known scenario.
 - Read `references/prompt-template.md` when drafting a prompt.
 - Read `references/series-lock.md` when generating multiple illustrations for the same article.
 - Read `references/qa-checklist.md` before final delivery.
