@@ -9,6 +9,8 @@ Use this skill to turn one idea from a Chinese article or note into a single 16:
 
 This is not a generic character illustration skill. The output should explain a judgment, process, state, comparison, risk, or metaphor from the source material. The recurring role is a twin-tail girl who actively performs the core action in the visual.
 
+By default, this skill should prefer article-body illustrations over posters. When the user provides a full article, first break it into 3 to 5 visual anchors, then produce a shot list, then write final prompts, and generate the images if requested.
+
 ## When To Use
 
 Use this skill when the user wants any of the following:
@@ -17,6 +19,7 @@ Use this skill when the user wants any of the following:
 - A prompt for one editorial illustration
 - A consistent white-background hand-drawn visual language
 - The recurring character replaced with a twin-tail girl
+- A full set of matched illustrations for one article
 
 Do not use this skill for:
 
@@ -29,11 +32,13 @@ Do not use this skill for:
 ## Workflow
 
 1. Read the article, paragraph, note, or concept.
-2. Extract one visualizable anchor per image: judgment, structure, process, state, metaphor, or contrast.
-3. Choose a structure pattern from `references/composition-patterns.md`.
+2. If it is a full article, extract 3 to 5 visualizable anchors: judgment, structure, process, state, metaphor, or contrast.
+3. Choose one structure pattern per image from `references/composition-patterns.md`.
 4. Make the twin-tail girl perform the key action. If removing her would leave the image unchanged, the concept is under-specified.
-5. Write a generation prompt using `references/prompt-template.md`.
-6. Validate against `references/qa-checklist.md` before delivering.
+5. Write a shot list first when the article has multiple paragraphs.
+6. Write generation prompts using `references/prompt-template.md`.
+7. If the user asks to generate images, keep the whole set visually matched: same doodle language, same line weight, same girl scale, similar whitespace density, and similar annotation density.
+8. Validate against `references/qa-checklist.md` before delivering.
 
 ## Core Output Rules
 
@@ -50,4 +55,5 @@ Do not use this skill for:
 - Read `references/girl-ip.md` for character behavior and design rules.
 - Read `references/composition-patterns.md` when choosing scene structure.
 - Read `references/prompt-template.md` when drafting a prompt.
+- Read `references/series-lock.md` when generating multiple illustrations for the same article.
 - Read `references/qa-checklist.md` before final delivery.
