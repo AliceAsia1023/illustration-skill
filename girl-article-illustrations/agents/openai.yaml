@@ -1,0 +1,4 @@
+interface:
+  display_name: "Girl Article Illustrations"
+  short_description: "Create hand-drawn article illustrations with a twin-tail girl"
+  default_prompt: "Use $girl-article-illustrations to design or generate white-background hand-drawn editorial illustrations for this Chinese article."
